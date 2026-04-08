@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Johnson Hove | Portfolio</title>
+  <meta name="description"
+    content="Professional Web Development Portfolio for Johnson Hove, showcasing projects, skills, and experience.">
+
+  <!-- Google Fonts: Inter and Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#" class="logo">J.Hove</a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / About Me Section -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <div class="about-content reveal fade-up">
+          <span class="greeting">Hello, I'm</span>
+          <h1 class="title">Johnson Hove</h1>
+          <h2 class="subtitle">Creative <span class="gradient-text">Web Developer</span></h2>
+          <p class="description">
+            A passionate developer focusing on modern Web Technologies. I specialize in building responsive, accessible,
+            and highly interactive user interfaces. I love transforming complex problems into elegant, efficient, and
+            user-friendly digital solutions.
+          </p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Johnson Hove.pdf" download class="btn btn-secondary">Download CV <i class="fa-solid fa-download"
+                style="margin-left: 8px;"></i></a>
+          </div>
+        </div>
+
+        <div class="about-image reveal fade-left">
+          <div class="blob-bg"></div>
+          <img src="me.jpg" alt="Johnson Jnr - Web Developer">
+        </div>
+      </div>
+
+      <!-- Animated Counters -->
+      <div class="counters-wrapper container">
+        <div class="counter-item card glass">
+          <h3 class="counter" data-target="3">0</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="counter-item card glass">
+          <h3 class="counter" data-target="15">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="counter-item card glass">
+          <h3 class="counter" data-target="24">0</h3>
+          <p>Technologies Mastered</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title reveal fade-up">My <span class="gradient-text">Skills</span></h2>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category card glass reveal fade-up">
+            <h3 class="category-title"><i class="fa-solid fa-code"></i> Languages</h3>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-html5"></i> HTML5</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+              <li><i class="fa-brands fa-python"></i> Python</li>
+            </ul>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="skill-category card glass reveal fade-up" style="transition-delay: 100ms;">
+            <h3 class="category-title"><i class="fa-solid fa-layer-group"></i> Frameworks</h3>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-react"></i> React</li>
+              <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+              <li><i class="fa-brands fa-bootstrap"></i> Bootstrap / Tailwind</li>
+              <li><i class="fa-solid fa-mobile-screen-button"></i> Flutter</li>
+            </ul>
+          </div>
+
+          <!-- Tools / Platforms -->
+          <div class="skill-category card glass reveal fade-up" style="transition-delay: 200ms;">
+            <h3 class="category-title"><i class="fa-solid fa-wrench"></i> Tools</h3>
+            <ul class="skill-list">
+              <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+              <li><i class="fa-brands fa-figma"></i> Figma</li>
+              <li><i class="fa-brands fa-docker"></i> Docker</li>
+              <li><i class="fa-brands fa-aws"></i> AWS / Vercel</li>
+            </ul>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category card glass reveal fade-up" style="transition-delay: 300ms;">
+            <h3 class="category-title"><i class="fa-solid fa-database"></i> Databases</h3>
+            <ul class="skill-list">
+              <li><i class="fa-solid fa-server"></i> MongoDB</li>
+              <li><i class="fa-solid fa-table"></i> PostgreSQL</li>
+              <li><i class="fa-solid fa-database"></i> MySQL</li>
+              <li><i class="fa-solid fa-bolt"></i> Redis</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Infinite Loop Slider -->
+        <div class="skills-slider-container reveal fade-up">
+          <div class="skills-slider">
+            <div class="slider-track">
+              <!-- First Set -->
+              <div class="slider-track-inner">
+                <div class="slider-item"><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML5</div>
+                <div class="slider-item"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i> CSS3</div>
+                <div class="slider-item"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript</div>
+                <div class="slider-item"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python</div>
+                <div class="slider-item"><i class="fa-brands fa-react" style="color: #61DAFB;"></i> React</div>
+                <div class="slider-item"><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</div>
+                <div class="slider-item"><i class="fa-solid fa-server" style="color: #47A248;"></i> MongoDB</div>
+                <div class="slider-item"><i class="fa-brands fa-git-alt" style="color: #F05032;"></i> Git</div>
+                <div class="slider-item"><i class="fa-brands fa-figma" style="color: #F24E1E;"></i> Figma</div>
+                <div class="slider-item"><i class="fa-brands fa-docker" style="color: #2496ED;"></i> Docker</div>
+                <div class="slider-item"><i class="fa-brands fa-aws" style="color: #FF9900;"></i> AWS</div>
+                <div class="slider-item"><i class="fa-solid fa-mobile-screen-button" style="color: #02569B;"></i>
+                  Flutter</div>
+              </div>
+              <!-- Second Set -->
+              <div class="slider-track-inner">
+                <div class="slider-item"><i class="fa-brands fa-html5" style="color: #E34F26;"></i> HTML5</div>
+                <div class="slider-item"><i class="fa-brands fa-css3-alt" style="color: #1572B6;"></i> CSS3</div>
+                <div class="slider-item"><i class="fa-brands fa-js" style="color: #F7DF1E;"></i> JavaScript</div>
+                <div class="slider-item"><i class="fa-brands fa-python" style="color: #3776AB;"></i> Python</div>
+                <div class="slider-item"><i class="fa-brands fa-react" style="color: #61DAFB;"></i> React</div>
+                <div class="slider-item"><i class="fa-brands fa-node-js" style="color: #339933;"></i> Node.js</div>
+                <div class="slider-item"><i class="fa-solid fa-server" style="color: #47A248;"></i> MongoDB</div>
+                <div class="slider-item"><i class="fa-brands fa-git-alt" style="color: #F05032;"></i> Git</div>
+                <div class="slider-item"><i class="fa-brands fa-figma" style="color: #F24E1E;"></i> Figma</div>
+                <div class="slider-item"><i class="fa-brands fa-docker" style="color: #2496ED;"></i> Docker</div>
+                <div class="slider-item"><i class="fa-brands fa-aws" style="color: #FF9900;"></i> AWS</div>
+                <div class="slider-item"><i class="fa-solid fa-mobile-screen-button" style="color: #02569B;"></i>
+                  Flutter</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title reveal fade-up">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="carousel-container reveal fade-up">
+        <div class="carousel-track">
+          <!-- Set 1 -->
+          <div class="carousel-track-inner">
+            <!-- Project 1 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="tech_company_ecommerce.png" alt="Tech Company Website Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Tech Company Website</h3>
+                <p class="project-desc">A modern digital solution showcasing innovative products and services with
+                  seamless user experiennce.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/jonsoe/nhambosys" class="project-link" aria-label="GitHub Repository"><i
+                      class="fa-brands fa-github"></i>
+                    Code</a>
+                  <a href="https://nhambosys.co.zw/" class="project-link primary" aria-label="Live Demo"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="location_tracker_app.png" alt="Location Tracker Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Location Tracker</h3>
+                <p class="project-desc">A simple Android location tracker application that uses device’s GPS to detect
+                  and display the user’s current location in real time.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Android Studio</span>
+                  <span class="tech-badge">Kotlin</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Java</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/jonsoe/location-tracker" class="project-link"
+                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                  <a href="#" class="project-link primary" aria-label="Live Demo"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="campus_accommodation.png" alt="Campus Accommodation Website Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Campus Accomodation Website</h3>
+                <p class="project-desc">A Campus Accommodation Website helps students easily find and book housing
+                  within or near their institution.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">TypeScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/jonsoe/campus-cribs-booking" class="project-link"
+                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i>
+                    Code</a>
+                  <a href="https://campus-cribs-booking.vercel.app/auth" class="project-link primary"
+                    aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Set 2 -->
+          <div class="carousel-track-inner">
+            <!-- Project 1 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="tech_company_ecommerce.png" alt="Tech Company Website Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Tech Company Website</h3>
+                <p class="project-desc">A full-stack e-commerce application with dynamic product filtering, shopping
+                  cart functionality, and secure checkout integration.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i>
+                    Code</a>
+                  <a href="https://nhambosys.co.zw/" class="project-link primary" aria-label="Live Demo"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="location_tracker_app.png" alt="Location Tracker Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Location Tracker</h3>
+                <p class="project-desc">A simple Android location tracker application that uses device’s GPS to detect
+                  and display the user’s current location in real time.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Android Studio</span>
+                  <span class="tech-badge">Kotlin</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Java</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/jonsoe/location-tracker" class="project-link"
+                    aria-label="GitHub Repository"><i class="fa-brands fa-github"></i> Code</a>
+                  <a href="#" class="project-link primary" aria-label="Live Demo"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card card glass">
+              <div class="project-image">
+                <img src="campus_accommodation.png" alt="Campus Accommodation Website Mockup"
+                  style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Social Collaboration Hub</h3>
+                <p class="project-desc">A real-time communication platform allowing teams to create channels, share
+                  files, and collaborate efficiently from anywhere.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Next.js</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">Socket.io</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i>
+                    Code</a>
+                  <a href="#" class="project-link primary" aria-label="Live Demo"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title reveal fade-up">Get In <span class="gradient-text">Touch</span></h2>
+
+        <div class="contact-wrapper card glass reveal fade-up">
+          <div class="contact-info">
+            <h3>Let's build something awesome!</h3>
+            <p>I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            </p>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/johnson-hove-a4a3793a8" class="social-icon" aria-label="LinkedIn"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/jonsoe" class="social-icon" aria-label="GitHub"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://www.facebook.com/johnson.hove.96?rdid=On563KDOVi5AxGfO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1D6iJUkPce%2F#"
+                class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/offx.johnson" class="social-icon" aria-label="Instagram"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://wa.me/qr/6GTJYTXPP4TJO1" class="social-icon" aria-label="WhatsApp"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.tiktok.com/@offx.johnson?_r=1&_t=ZS-95JmJn4ooKb" class="social-icon"
+                aria-label="Tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" action="https://formsubmit.co/johnhove10@gmail.com" method="POST"
+            target="_blank" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe">
+              <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com">
+              <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..."></textarea>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="form-success" class="success-msg">Message sent successfully!</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Johnson Jnr. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
